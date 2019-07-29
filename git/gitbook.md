@@ -6,8 +6,6 @@ gitbook是Node.js环境下，用于构建电子书的工具，所以要先安装
 
 下载链接：https://nodejs.org/en/
 
-![1564402040186](C:\Users\hfjy\AppData\Roaming\Typora\typora-user-images\1564402040186.png)
-
 ### 2、安装gitbook-cli
 
 gitbook-cli 是gitbook的命令行工具，可在cmd中运行如下命令：
@@ -87,9 +85,9 @@ git remote add origin https://github.com/github账号/项目名(需与本地目�
 
 ##### 4.1.2 网页新建
 
-![1564403114814](C:\Users\hfjy\AppData\Roaming\Typora\typora-user-images\1564403114814.png)
+登录github账号，点击New repository，创建项目 ;
 
-![1564403225830](C:\Users\hfjy\AppData\Roaming\Typora\typora-user-images\1564403225830.png)
+添加项目名称和描述，然后创建项目 ;
 
 并克隆到本地；
 
