@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-- [python][python.md]
+- [python](python.md)
 
   
 
