@@ -2,12 +2,12 @@
 
 * [Introduction](README.md)
 
-- [python](python/readme.md)
+- [Python](python/readme.md)
 
-  - 魔法方法
-- [git](git/readme.md)
+  - [魔法方法](python/Jupyter魔法方法.md)
+- [Git](git/readme.md)
 
-  - [gitbook](git/gitbook.md)
+  - [GitBook](git/gitbook.md)
 
   
   
