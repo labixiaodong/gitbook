@@ -22,16 +22,19 @@ CLI version: 2.3.2
 GitBook version: 3.2.3
 ```
 
-### 3、构建电子书
+### 3、生成github项目
 
-#### 3.1 创建存储电子书所用的文件夹，并cd到该文件夹
+登录github账号，点击New repository，创建项目 ;
 
-```
-$ mkdir book
-$ cd book
-```
+添加项目名称和描述，然后创建项目 ;
 
-#### 3.2 初始化电子书：
+并克隆到本地；
+
+### 4、构建电子书
+
+#### 4.1 进入上一步clone的github项目文件夹
+
+#### 4.2 初始化电子书：
 
 ```
 $ gitbook init
@@ -44,7 +47,7 @@ $ gitbook init
 └── SUMMARY.md
 ```
 
-#### 3.3 启动gitbook
+#### 4.3 启动gitbook
 
 ```
 $ gitbook serve
@@ -54,52 +57,13 @@ $ gitbook serve
 
 这一步会生成_book文件夹；
 
-### 4、结合github Pages
-
-GitHub Pages 是 GitHub 提供的静态网站托管服务。
-
-GitHub 上的每个仓库都可以拥有一个 GitHub Pages，对应的 URL 如下：
+### 5、把本地项目推到github
 
 ```
-https://<username>.github.io/<repository>/
-```
-
-其中，<username>是你的github用户名，<repository>是项目名称。
-
-GitHub Pages 的静态资源支持下面 3 个来源：
-
--  `master` 分支
--  `master` 分支的 `/docs` 目录
--  `gh-pages` 分支
-
-#### 4.1 新建github项目
-
-新建github项目有两种方法，一种是在本地使用git命令行，一种是在github网页上新建：
-
-##### 4.1.1 本地命令行新建
-
-```python
-git init
-git remote add origin https://github.com/github账号/项目名(需与本地目录一致).git
-```
-
-##### 4.1.2 网页新建
-
-登录github账号，点击New repository，创建项目 ;
-
-添加项目名称和描述，然后创建项目 ;
-
-并克隆到本地；
-
-#### 4.2 把本地项目推到github
-
-```python
 git add .
 git commit -m 'init' 
 git push -u origin master
 ```
-
-#### 4.3 将远程文件的推到其他分支
 
  `_book` 目录中包含静态电子书页面，执行下面命令，将 `_book` 目录推送到 GitHub 仓库的 `gh-pages` 分支，
 
@@ -109,7 +73,17 @@ git push -u origin master
 $ git subtree push --prefix=_book origin gh-pages
 ```
 
-### 5 更新gitbook
+GitHub Pages 是 GitHub 提供的静态网站托管服务。
+
+GitHub 上的每个仓库都可以拥有一个 GitHub Pages，对应的 URL 如下：
+
+```
+https://<username>.github.io/<repository>/
+```
+
+其中，<username>是你的github用户名，<repository>是项目名称，打开URL即可访问推到线上的gitbook
+
+### 6 更新gitbook
 
 工具：markdown编辑器 [typora](https://typora.io/)
 
@@ -135,3 +109,4 @@ git push
 $ git subtree push --prefix=_book origin gh-pages
 ```
 
+每次更新本地项目之后，重复以上几条命令即可使线上同步更新。
